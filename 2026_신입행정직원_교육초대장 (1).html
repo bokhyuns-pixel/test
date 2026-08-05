@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026년도 신입 행정직원 기초 역량 강화 교육 초대장</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy-deep: #0F2942;
+    --navy: #1B3A5C;
+    --navy-soft: #33547A;
+    --gold: #B8933F;
+    --gold-soft: #E4D3A8;
+    --paper: #FAF9F6;
+    --paper-shade: #F1EFE9;
+    --ink: #1C1C1C;
+    --ink-soft: #5B6470;
+    --line: #D8D2C4;
+    --white: #FFFFFF;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: linear-gradient(180deg, #E4E9EE 0%, #EFEDE7 100%);
+    font-family: 'Noto Sans KR', sans-serif;
+    color: var(--ink);
+    display: flex;
+    justify-content: center;
+    padding: 48px 16px;
+    min-height: 100vh;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 760px;
+    background: var(--paper);
+    box-shadow: 0 30px 70px -25px rgba(15, 41, 66, 0.35);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--line);
+  }
+
+  /* ---------- HEADER ---------- */
+  .header {
+    background: linear-gradient(160deg, var(--navy-deep) 0%, var(--navy) 55%, var(--navy-soft) 100%);
+    color: var(--white);
+    padding: 56px 48px 64px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .header::before {
+    content: "";
+    position: absolute;
+    top: -60%;
+    right: -20%;
+    width: 480px;
+    height: 480px;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 50%;
+  }
+  .header::after {
+    content: "";
+    position: absolute;
+    top: -40%;
+    right: -10%;
+    width: 340px;
+    height: 340px;
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 50%;
+  }
+
+  .eyebrow {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gold-soft);
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    z-index: 2;
+  }
+  .eyebrow::before {
+    content: "";
+    width: 26px;
+    height: 1px;
+    background: var(--gold-soft);
+  }
+
+  .header h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    position: relative;
+    z-index: 2;
+    max-width: 480px;
+  }
+
+  .header .subtitle {
+    margin-top: 16px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 0.02em;
+    position: relative;
+    z-index: 2;
+  }
+
+  .host-tag {
+    position: absolute;
+    right: 48px;
+    bottom: 40px;
+    text-align: right;
+    z-index: 2;
+  }
+  .host-tag .org {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--white);
+  }
+  .host-tag .dept {
+    font-size: 12px;
+    color: var(--gold-soft);
+    margin-top: 2px;
+    letter-spacing: 0.05em;
+  }
+
+  /* ---------- INTRO ---------- */
+  .intro {
+    padding: 44px 48px 8px;
+    border-bottom: 1px solid var(--line);
+  }
+  .intro p {
+    font-size: 15px;
+    line-height: 1.9;
+    color: var(--ink-soft);
+  }
+  .intro .goal-box {
+    margin-top: 24px;
+    margin-bottom: 36px;
+    padding: 20px 24px;
+    background: var(--paper-shade);
+    border-left: 3px solid var(--gold);
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--navy-deep);
+  }
+  .intro .goal-box b {
+    font-family: 'Noto Serif KR', serif;
+    color: var(--navy-deep);
+  }
+
+  /* ---------- KEY INFO ---------- */
+  .info-grid {
+    padding: 8px 48px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    margin: 0 48px;
+    width: calc(100% - 96px);
+  }
+  .info-item {
+    background: var(--paper);
+    padding: 24px;
+  }
+  .info-item.full { grid-column: 1 / -1; }
+  .info-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+  .info-value {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--navy-deep);
+    line-height: 1.6;
+  }
+  .info-value .sub {
+    display: block;
+    font-size: 12.5px;
+    font-weight: 400;
+    color: var(--ink-soft);
+    margin-top: 4px;
+  }
+
+  /* ---------- TIMELINE (SIGNATURE ELEMENT) ---------- */
+  .journey {
+    padding: 52px 48px;
+    background: var(--navy-deep);
+    color: var(--white);
+    position: relative;
+  }
+  .journey-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 36px;
+  }
+  .journey-head h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 19px;
+    font-weight: 600;
+  }
+  .journey-head span {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: var(--gold-soft);
+    letter-spacing: 0.1em;
+  }
+
+  .track {
+    position: relative;
+    padding-left: 2px;
+  }
+  .track::before {
+    content: "";
+    position: absolute;
+    left: 27px;
+    top: 14px;
+    bottom: 14px;
+    width: 1px;
+    background: rgba(255,255,255,0.18);
+  }
+  .day {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: 20px;
+    padding: 18px 0;
+  }
+  .day-marker {
+    width: 56px;
+    height: 56px;
+    border: 1px solid var(--gold-soft);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--navy-deep);
+    position: relative;
+    z-index: 2;
+  }
+  .day-marker .d { font-family:'Space Mono', monospace; font-size: 9px; letter-spacing: 0.1em; color: var(--gold-soft); }
+  .day-marker .n { font-family:'Noto Serif KR', serif; font-size: 20px; font-weight: 600; color: var(--white); line-height: 1; }
+
+  .day-body { padding-top: 6px; }
+  .day-date { font-family: 'Space Mono', monospace; font-size: 11.5px; color: var(--gold-soft); margin-bottom: 4px; }
+  .day-title { font-size: 15.5px; font-weight: 600; margin-bottom: 4px; }
+  .day-desc { font-size: 13px; color: rgba(255,255,255,0.62); line-height: 1.7; }
+
+  .journey-note {
+    margin-top: 28px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.45);
+    border-top: 1px dashed rgba(255,255,255,0.18);
+    padding-top: 18px;
+  }
+
+  /* ---------- CTA ---------- */
+  .cta {
+    padding: 48px;
+    text-align: center;
+  }
+  .cta h3 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 18px;
+    color: var(--navy-deep);
+    margin-bottom: 12px;
+  }
+  .cta p {
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    margin-bottom: 28px;
+    line-height: 1.7;
+  }
+  .cta .placeholder {
+    color: var(--gold);
+    font-weight: 600;
+  }
+  .btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background: var(--navy-deep);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    border: 1px solid var(--navy-deep);
+    transition: all 0.25s ease;
+  }
+  .btn:hover {
+    background: transparent;
+    color: var(--navy-deep);
+  }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    padding: 24px 48px 32px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11.5px;
+    color: var(--ink-soft);
+    letter-spacing: 0.02em;
+  }
+  .footer .mark {
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 600;
+    color: var(--navy);
+  }
+
+  @media (max-width: 600px) {
+    .header { padding: 40px 26px 56px; }
+    .header h1 { font-size: 23px; }
+    .intro, .cta, .footer, .journey { padding-left: 26px; padding-right: 26px; }
+    .info-grid { margin: 0 26px; width: calc(100% - 52px); grid-template-columns: 1fr; }
+    .host-tag { position: static; text-align: left; margin-top: 24px; }
+    .day { grid-template-columns: 44px 1fr; }
+    .day-marker { width: 44px; height: 44px; }
+    .day-marker .n { font-size: 16px; }
+  }
+
+  @media print {
+    body { background: var(--white); padding: 0; }
+    .card { box-shadow: none; max-width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+
+  <div class="header">
+    <div class="eyebrow">CMC EDUCATION INVITATION</div>
+    <h1>2026년도 신입 행정직원<br>기초 역량 강화 교육</h1>
+    <div class="subtitle">학교법인 · 의료원 · CMC산하기관 신입 행정직원을 초대합니다</div>
+    <div class="host-tag">
+      <div class="org">가톨릭중앙의료원</div>
+      <div class="dept">교육팀 주최 · 주관</div>
+    </div>
+  </div>
+
+  <div class="intro">
+    <p>
+      새로운 시작을 함께하는 CMC 가족 여러분을 진심으로 환영합니다.
+      본 교육은 학교법인, 의료원, CMC산하기관에 새로 합류하신 행정직원 여러분이
+      조직과 직무에 빠르게 적응하고, 자신감 있게 첫걸음을 내딛을 수 있도록
+      마련한 자리입니다.
+    </p>
+    <div class="goal-box">
+      <b>교육 목표</b> — CMC 신입 행정직원의 안정적인 온보딩 지원
+    </div>
+  </div>
+
+  <div class="info-grid">
+    <div class="info-item">
+      <div class="info-label">Date</div>
+      <div class="info-value">2026. 10. 21.(수) ~ 10. 23.(금)
+        <span class="sub">3일간 진행</span>
+      </div>
+    </div>
+    <div class="info-item">
+      <div class="info-label">Audience</div>
+      <div class="info-value">학교법인 · 의료원 · CMC산하기관
+        <span class="sub">신입 행정직원</span>
+      </div>
+    </div>
+    <div class="info-item full">
+      <div class="info-label">Venue</div>
+      <div class="info-value">가톨릭중앙의료원 교육실
+        <span class="sub">서울 서초구 반포대로 222, 성의교정 대학본관 3층</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="journey">
+    <div class="journey-head">
+      <h2>3일간의 여정</h2>
+      <span>PROGRAM TRACK</span>
+    </div>
+    <div class="track">
+      <div class="day">
+        <div class="day-marker"><span class="d">DAY</span><span class="n">1</span></div>
+        <div class="day-body">
+          <div class="day-date">10. 21.(수)</div>
+          <div class="day-title">오리엔테이션 및 조직 이해</div>
+          <div class="day-desc">CMC의 비전과 조직문화를 이해하고 새로운 동료들과 첫 만남을 갖습니다.</div>
+        </div>
+      </div>
+      <div class="day">
+        <div class="day-marker"><span class="d">DAY</span><span class="n">2</span></div>
+        <div class="day-body">
+          <div class="day-date">10. 22.(목)</div>
+          <div class="day-title">직무 기초 역량 강화</div>
+          <div class="day-desc">행정 실무에 필요한 기본 소양과 업무 프로세스를 익힙니다.</div>
+        </div>
+      </div>
+      <div class="day">
+        <div class="day-marker"><span class="d">DAY</span><span class="n">3</span></div>
+        <div class="day-body">
+          <div class="day-date">10. 23.(금)</div>
+          <div class="day-title">실무 적용 및 수료</div>
+          <div class="day-desc">배운 내용을 현장에 적용하는 실습을 진행하고 교육을 마무리합니다.</div>
+        </div>
+      </div>
+    </div>
+    <div class="journey-note">※ 세부 프로그램 및 시간표는 별도 안내 예정입니다.</div>
+  </div>
+
+  <div class="cta">
+    <h3>참석을 기다립니다</h3>
+    <p>신청 기간 및 방법은 아래와 같습니다.<br>
+      <span class="placeholder">[추후 기재 – 링크 / QR / 이메일 등]</span></p>
+  </div>
+
+  <div class="footer">
+    <span class="mark">가톨릭중앙의료원</span>
+    <span>문의 : 교육팀 [연락처 기재]</span>
+  </div>
+
+</div>
+
+</body>
+</html>
